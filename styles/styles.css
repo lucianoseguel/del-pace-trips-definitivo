@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Inter:wght@100..900&family=Nanum+Gothic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nanum+Gothic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nanum+Gothic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+:root{
+    --main_font--:"Noto Sans", sans-serif;
+    --secondary_font--:"Lato", sans-serif;
+    --primary_font--:  "Nunito", sans-serif;
+
+    /*-------------------------COLOR PALLETE-------------------------*/
+    --field-drab: #654D23ff;
+    --mint-cream: #EFF4EDff;
+    --dun: #DBC7A5ff;
+    --rich-black: #131B2Bff;
+    --dark-moss-green: #3C4414ff;
+    --umber: #675646ff;
+    --avocado: #5A7C13ff;
+    /*COLOR PALLETE LINK: https://coolors.co/654d23-eff4ed-dbc7a5-131b2b-3c4414-675646-5a7c13 */
+}
+
+
+body{
+    overflow-x: hidden;
+}
+
+nav{
+    top: 0;
+    margin-bottom: 0 !important;
+    width: 100vw !important;
+    height: 10vh;
+    position: fixed !important;
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;  
+    z-index: 100;  
+
+}
+
+
+
+#icoprincipal{
+    max-width: 100px;
+}
+
+
+#navback, #offcanvasNavbar2{
+    background-color: var(--dun) !important;
+}
+
+#listanav{
+    gap: 30px;
+    
+}
+
+.nav-link {
+    font-family: var(--main_font--) !important;
+    color: var(--dark-moss-green) !important;
+    text-align: center;
+    margin: auto;
+}
+
+.active{
+    color: var(--avocado) !important;
+}
+
+
+.offcanvas{
+    max-width: 80vw !important;
+}
+
+
+
+@media (max-width: 1000px) {
+    nav{
+        padding-left: 1rem !important;
+    padding-right: 1rem !important;   
+
+    
+      
+    }
+
+    
+#icoprincipal{
+    max-width: 80px;
+}
+
+  }
+
+
+
+
+
+
+/*--------------principal-------------*/
+
+#mainbackground{
+    
+    display: flex;
+    background-image: url(../images/racimodeuva2.jpg);
+    width: 100vw;
+    height: 90vh;
+    margin-top: 10vh;
+    padding-top: 3vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+   
+    
+}
+
+#tituloprincipal{
+    max-width: 50vw;
+    font-family: var(--secondary_font--);
+
+    text-align: center;
+    align-content: center;
+    color: var(--dark-moss-green);
+    font-size: 5vw;
+    font-weight: 1000;
+    flex: 2;
+
+}
+
+#subtituloprincipal{
+    max-width: 60vw;
+    text-align: center;
+   
+    color:var(--rich-black);
+    font-family: "Nunito", sans-serif;
+    font-size: 3vw;
+
+    flex: 1;
+}
+
+
+@media (max-width: 1000px) {
+    #tituloprincipal{
+        max-width: 90vw;
+        
+        font-size: 5.5vh;
+        font-weight: 1000;
+        flex: 2;
+    
+    }
+
+    #subtituloprincipal{
+        max-width: 60vw;
+        text-align: center;
+       
+        color:var(--rich-black);
+        font-family: "Nunito", sans-serif;
+        font-size: 3vh;
+    
+        flex: 1;
+    }
+}
+
+
+/*------------------cuerpo-----------------*/
+
+#objetivo{  /* Objetivo de la empresa */
+    max-width: 55vw;
+    margin: auto;
+    text-align: center;
+    
+    line-height: 2.5em;
+}
+
+.row, .row-cols-1{
+    background: white !important;
+}
+
+.col{
+    overflow: hidden;
+    background: white !important;
+}
+
+.card{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition:all 0.2s ;
+   
+}
+
+.card:hover{
+
+   
+    background-size: 250%;
+}
+
+
+
+
+.btn-primary{
+    background-color: var(--dun) !important;
+    border: 0 !important;
+    color: var(--rich-black);
+}
