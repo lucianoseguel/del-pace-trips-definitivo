@@ -28,6 +28,7 @@
 
 body{
     overflow-x: hidden;
+    background-color: whitesmoke;
 }
 
 nav{
@@ -168,6 +169,12 @@ nav{
 
 /*------------------cuerpo-----------------*/
 
+#objetitle{
+    text-align: center;
+    margin: 2rem auto;
+}
+
+
 #objetivo{  /* Objetivo de la empresa */
     max-width: 55vw;
     margin: auto;
@@ -177,12 +184,14 @@ nav{
 }
 
 .row, .row-cols-1{
-    background: white !important;
+    background: whitesmoke !important;
+    margin: 0;
+    padding: 0 !important;
 }
 
-.col{
-    overflow: hidden;
-    background: white !important;
+.col, #custom-cards{
+    overflow: visible;
+    background: whitesmoke !important;
 }
 
 .card{
@@ -196,7 +205,7 @@ nav{
 .card:hover{
 
    
-    background-size: 250%;
+    background-size: scale(1.2);
 }
 
 
