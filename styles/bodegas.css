@@ -108,7 +108,7 @@ nav{
 #mainbackground{
     
     display: flex;
-    background-image: url(../images/racimodeuva2.jpg);
+    background-image: url(../images/TOURS.jpg);
     width: 100vw;
     height: 90vh;
     margin-top: 10vh;
@@ -130,7 +130,7 @@ nav{
 
     text-align: center;
     align-content: center;
-    color: var(--dark-moss-green);
+    color:white;
     font-size: 5vw;
     font-weight: 1000;
     flex: 2;
